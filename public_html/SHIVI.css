@@ -1,0 +1,36 @@
+.FirstDiv{
+    background: #e5e699;
+    font: italic bold 50px vardana bold  ;
+    color:#32ffff;
+ margin: 20px;
+    border:5px solid #ff01ac;
+    border-radius:10px;
+    display:flex; 
+   
+ 
+    
+}
+.SecondDiv{
+    background: #ff146a;
+    font: italic bold 30px courier new  ;
+    color:#32ffff;
+    margin-top: 20px;
+    border:5px solid #f001Fc;
+    border-radius:10px;
+    height:100px;
+    display:inline-block;
+    float:left;
+}
+.FirstDiv_Left{
+    width:50%;
+    display:inline-block;
+    border:1px solid black;
+    float:left;
+}
+.FirstDiv_Right{
+    width:50%;
+   
+    border:1px solid pink;
+   
+    //display: inline block;
+}

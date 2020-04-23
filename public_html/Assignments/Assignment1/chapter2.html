@@ -1,0 +1,371 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>HOTS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <style>
+            body{
+                margin-left:50px;
+                margin-right:50px;
+            }
+            .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            }
+
+            .switch input { 
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+        </style>
+        
+    </head>
+    <body>
+        <div>
+            <h1>Polynomial</h1>
+            <hr />
+            <br />
+        </div>
+        <div>
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Question</th>
+                    <th>Board Asked</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        Find the zeroes of the polynomials 6x <sup>2</sup>-3-7x and veryfy the relationship
+                        between the zeroes and the coefficients.
+                    </td>
+                    <td>
+                        [<b>CBSE 2008</b>]
+                    </td>
+                    <td>
+                       <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        Obtain the zeroes of the quadratic polynomial &#x221A;3 x <sup>2</sup>- 8x +4 &#x221A;3 and verify 
+                        the relation between its zeroes and coefficients.
+                    </td>
+                    <td>[<b>CBSE 2008C</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        If one zero of the polynomial (a<sup>2</sup> +9)x <sup>2</sup>+13x+6a is reciprocal of the other,
+                        find the value of a. 
+                    </td>
+                    <td>[<b>CBSE 2008</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Find the quadric polynomial whose zeroes are 1 and -3.Verify the relation between the 
+                        coefficients and zeroes of the polynomial.
+                    </td>
+                    <td>[<b>CBSE 2008C</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>
+                        If the product of the zeroes of the polynomial (ax <sup>2</sup> -6x-6) is 4, find the value of a.    
+                    </td>
+                    <td>[<b>CBSE 2008,09</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                    If x=2/3 and x=-3 are the roots of the quadratic equation ax <sup>2</sup>+7x +b= 0
+                    </td>
+                    <td>[<b>CBSE 2011</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>If (x+a)is a factor of the polynomial 2x <sup>2</sup>+2ax+5x+10, find the value of a.
+                    </td>
+                    <td>[<b>CBSE 2009</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>
+                        What real number should be subtracted from the
+                        polynomial (3x <sup>3</sup> +10x <sup>2</sup> -14x +9) so that (3x-2) divides it exactly    
+                    </td>
+                    <td>[<b>CBSE 2008C,09</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>
+                        If the polynomial (x<sup>4</sup>+2x<sup>3</sup>+8x<sup>2</sup>+12x+18) is
+                        divided by another polynomial (x<sup>2</sup>+5), the remainder comes out to be 
+                        (px+q). Find the value of p and q.
+                    </td>
+                    <td>[<b>CBSE 2009</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>
+                        On dividing (x<sup>3</sup> -3x<sup>2</sup>+x+2) by a polynomial g(x), the quotient 
+                        and remainder are (x-2)and (-2x+4) respectively.Find g(x).
+                    </td>
+                    <td>[<b>CBSE 2009C</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>
+                        Obtain all zeroes of the polynomial (2x<sup>3</sup>-4x-x<sup>2</sup>+2), if two of its zeroes are
+                        &#x221A;2 and -&#x221A;2.
+                    </td>
+                    <td>[<b>CBSE 2008C</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Obtain all zeros of (3x<sup>4</sup>-15x<sup>3</sup>+13x<sup>2</sup>+25x-30), if two of its
+                    zeros are <img src="https://latex.codecogs.com/gif.latex?\sqrt{\frac{5}{3}}" title="\sqrt{\frac{5}{3}}" /> and <img src="https://latex.codecogs.com/gif.latex?-\sqrt{\frac{5}{3}}" title="-\sqrt{\frac{5}{3}}"/>. 
+                    </td>
+                    <td><b>[CBSE 2009C]</b></td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>13</td>
+                <td>If 2 and -2 are two zeroes of the polynomial (x <sup>4</sup>+ x <sup>3</sup>-34x 
+                    <sup>2</sup>-4x+120),find all the zeros of the given polynomials.</td>
+                <td><b>[CBSE 2008]</b></td>
+                <td>
+                <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>14</td>
+                <td>Find all the zeros of (x <sup>4</sup> +x <sup>3</sup> -23x <sup>2</sup> -3x+60),
+                    if it is given that two of its zeroes are &#x221A;3 and -&#x221A;3. 
+                       
+                </td>
+                <td><b>[CBSE 2009C]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>15</td>
+                <td>
+                    Obtain all other zeroes of (x <sup>4</sup>+4x <sup>3</sup>-2x<sup>2</sup>-20x-15) if 
+                    two of its zeroes are &#x221A;5 and -&#x221A;5.
+                </td>
+                <td><b>[CBSE 2009C]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>16</td>
+                <td>If -4 is a zero of the polynomial x<sup>2</sup>-x-(2k+2) then find the value of k.
+                </td>
+                <td><b>[CBSE 2009]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>17</td>
+                <td>If -2 is a of the polynomial 3x<sup>2</sup>+4x+2k then find the value of k.</td>
+                <td><b>[CBSE 2010]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>18</td>
+                <td>Write the zeros of the polynomial x<sup>2</sup>-x-6.</td>
+                <td><b>[CBSE 2008]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>19</td>
+                <td>If (x+a) is a factor of (2x<sup>2</sup>+2ax+5x+10), find the value of a.</td>
+                <td><b>[CBSE 2010]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>20</td>
+                <td>If &alpha; and &beta; are the zeros of the polynomial 2x<sup>2</sup>+7x+5, write the value of 
+                    &alpha;+&beta;+&alpha;&beta;    
+                </td>
+                <td><b>[CBSE 2010]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+ 
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  <script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  });
+</script>
+    </body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>HOTS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <style>
+            body{
+                margin-left:50px;
+                margin-right:50px;
+            }
+            .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            }
+
+            .switch input { 
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+        </style>
+        
+    </head>
+    <body>
+        <div>
+            <h1>Real Numbers</h1>
+            <hr />
+            <br />
+        </div>
+        <div>
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Question</th>
+                    <th>Board Asked</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                     Using Euclid's division Lemma, show that square of any positive integer is 
+                     either of the form 3m or (3m+1) for some integer m.
+                    </td>
+                    <td>
+                        [<b>CBSE 2008</b>]
+                    </td>
+                    <td>
+                       <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Using Euclid's division lemma, show that the cube of any positive integer 
+                    is of the form 9m or (9m+1) or (9m+8) for some integer m.
+                    </td>
+                    <td>[<b>CBSE 2009C</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Show that one and only one out of n,n+2,n+4 is divisible by 3,where n is any positive
+                        integer.
+                    </td>
+                    <td>[<b>CBSE 2008C</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>The decimal expansion of the rational number 43/2<sup>4</sup> . 5<sup>3</sup>, will
+                        terminate after how many places of decimals?
+                    </td>
+                    <td>[<b>CBSE 2009</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>Prove that &#x221A;2 is irrational.
+                    </td>
+                    <td>[<b>CBSE 2008,09</b>]</td>
+                    <td>
+                        <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Prove that &#x221A;3 is irrational.
+                    </td>
+                    <td>[<b>CBSE 2008,09C</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Prove that &#x221A;5 is irrational.
+                    </td>
+                    <td>[<b>CBSE 2008,09</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Show that {2+&#x221A;3} is irrational number.
+                    </td>
+                    <td>[<b>CBSE 2008C,09</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Show that {4-&#x221A;3} is irrational number.
+                    </td>
+                    <td>[<b>CBSE 2008</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Prove that {3+5&#x221A;2} is irrational number.
+                    </td>
+                    <td>[<b>CBSE 2009</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Show that {5-2&#x221A;3} is irrational number.
+                    </td>
+                    <td>[<b>CBSE 2008</b>]</td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Prove that (2-&#x221A;3) is irrational number.</td>
+                    <td><b>[CBSE 2008]</b></td>
+                    <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>13</td>
+                <td>Prove that (3+&#x221A;2) is irrational number.</td>
+                <td><b>[CBSE 2009]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>14</td>
+                <td>Prove that (2+&#x221A;5) is irrational number.</td>
+                <td><b>[CBSE 2008C]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>15</td>
+                <td>Prove that (5+3&#x221A;2) is irrational number.</td>
+                <td><b>[CBSE 2008]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>16</td>
+                <td>Prove that (2-3&#x221A;5) is irrational number.</td>
+                <td><b>[CBSE 2010]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>17</td>
+                <td>Prove that (2-&#x221A;3-1) is irrational number.</td>
+                <td><b>[CBSE 2010]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                <td>18</td>
+                <td>Prove that (4-5&#x221A;2) is irrational number.</td>
+                <td><b>[CBSE 2010]</b></td>
+                <td>
+                         <label class="switch">
+                             <input type="checkbox" >
+                             <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+ 
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  <script>
+  $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  });
+</script>
+    </body>
+</html>
