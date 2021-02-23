@@ -1,0 +1,27 @@
+.style{
+    padding:10px;
+    background-color:#fcf803;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    border:none;
+}
+.styling{
+    padding:10px;
+    background-color:#adfc03;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    border:none;
+}
+.btn{
+    padding:10px;
+    background-color:#fc0380;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    border:none;
+}
+.style .styling .btn:hover{
+    border:none;
+}

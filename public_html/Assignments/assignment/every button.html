@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> button </title>
+        <style>
+            
+            #o{
+                padding:19px;
+                font-size:20px;
+                font-family: sans-serif;
+                background-color:red;
+                color:white;
+                border-radius: 5px;
+            }
+            div{
+                text-align: center;
+                padding-top: 23%;
+            }
+            #o:hover{
+                background-color:tomato;
+                cursor: pointer; 
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+          <button id="o" onclick="myFunction()">CLICK MEE</button> 
+          
+          <script>
+function myFunction() {
+  document.getElementById("o").innerHTML = "YOU CLICKED ME!";
+}
+</script>
+
+        </div>
+    </body>
+</html>

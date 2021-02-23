@@ -1,0 +1,33 @@
+.item ul, input[type="checkbox"]{
+  display:none;
+}
+.item input:checked ~ ul{
+  display:block;
+}
+.arrow{
+  font-size: 15px;
+  vertical-align:middle;
+  float:left;
+  z-index:0;
+}
+.item input + .arrow{
+transform:rotate(-90deg);
+}
+.item input:checked + .arrow{
+transform:rotate(0deg);
+transition:0.1s;
+color: black;
+}
+.menuitem{
+    padding:0px;
+    margin-top: 0px;
+}
+i{
+    padding-right: 5px;
+}
+
+
+
+
+
+ 

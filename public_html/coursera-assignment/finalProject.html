@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gopal Solanki Submission</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*cross browser testing */
+        /* IE and EDGE */
+              
+        progress {
+            /* RESETS */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: none;
+            width: 300px;
+            height: 8px;
+            border-radius: 20px;
+            background-color: #ebebeb;
+            color: #449cf8
+        }
+ 
+        /* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+        progress::-webkit-progress-bar {
+            background-color: #ebebeb;
+            border-radius: 20px;
+        }
+ 
+        progress::-webkit-progress-value {
+            background-color: #449cf8;
+            border-radius: 20px;
+        }
+        /* MOZILLA FIREFOX */
+        progress::-moz-progress-bar {
+            background-color: #449cf8;
+            border-radius: 20px;
+        }
+        .item ul, input[type="checkbox"]{
+            display:none;
+        }
+        .item input:checked ~ ul{
+            display:block;
+        }
+        .arrow{
+            font-size: 15px;
+            vertical-align:middle;
+            float:left;
+            z-index:0;
+        }
+        .item input + .arrow{
+            transform:rotate(-90deg);
+        }
+        .item input:checked + .arrow{
+            transform:rotate(0deg);
+            transition:0.1s;
+            color: black;
+        }
+        .menuitem{
+            padding:0px;
+            margin-top: 0px;
+            list-style: none;
+        }
+        i{
+         padding-right: 5px;
+        }
+    </style>
+    </head>
+    
+    <body>
+        <h1>Gopal Solanki</h1>   
+        
+            <nav>
+                <a href="">One</a>
+                <a href="">Two</a>
+                <a href="">Three</a>
+                <a href="">Gopal's Choice</a>
+            </nav>
+        
+        <section>
+        <h2>Favorite Foods</h2>
+        <ul>
+            <li>Samosa</li>
+            <li>Aloo Tikia</li>
+            <li>Dhokla</li>
+            <li>Pani Puri</li>
+        </ul>
+        </section>
+        
+        <section>
+        <h2>Achievements</h2>
+        <label>Progress in this course (100%)</label>
+        <progress value="100" max="100"> 100% </progress><br/>
+        <label>Progress in Specialization capstone (20%)</label>
+        <progress value="20" max="100"> 100% </progress><br />
+        <label>Progress in life goals (76%)</label>
+        <progress value="76" max="100"> 100% </progress>
+        </section>
+       <section>
+        <h2>More About Me</h2>
+        <!-- First Item -->
+        <div class="item">
+        <input type="checkbox" id="A"/>
+        <i class="fa fa-caret-down arrow"></i>     
+        <span><label class="ArrowLabel" for="A"> My Childhood</label></span>
+        <ul class="menuitem">
+            <li class="nonsublist">I enjoyed my childhood life in small town Karhal near Agra, famous tourist destination. I always love to go to Karhal.</li>
+        </ul>       
+        </div>
+       </section>  
+        <footer>
+            <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="logo">This page was
+            created by Gopal Solanki. To learn more about Web Design, visit <a href="http://www.intro-webdesign.com">Intro to Web Design.</a>
+        </footer>
+       
+    </body>
+</html>

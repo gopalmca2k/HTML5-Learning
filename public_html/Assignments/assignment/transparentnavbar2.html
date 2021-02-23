@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        
+    </head>
+    <style>
+        
+        body{
+    background:url("images/statue.webp") ;
+    background-size:cover;
+    
+    }
+      .menudropdown1{
+       width:80%;
+       height:100px;
+       margin: 0px auto;
+   } 
+   .menudropdown1 ul{
+       padding:0px;
+   }
+   .menudropdown1 ul li{
+       float:left;
+       background-color:black;
+       color:white;
+       width:200px;
+       height:50px;
+       line-height: 50px;
+       font-size:25px;
+       text-align:center;
+       opacity:0.6;
+       list-style:none;
+   }
+   
+   
+  .menudropdown1 ul li ul{
+       display:none;
+   }
+   
+   .menudropdown1 ul li:hover > ul{
+       display:block;
+   }
+   
+   .menudropdown1 ul li:hover{
+       background-color:#32CD32;
+       opacity:0.9;
+   }
+        
+        
+        
+        
+    </style>
+    <body>
+        <div class="menudropdown1">
+      <ul>
+        <li>USA
+          <UL>
+            <LI> New York</LI>
+          </UL>
+        </li>
+        <li>India
+          <ul>
+            <li>Pune</li>
+            <li>Mumbai</li>
+            <li>Banglore</li>
+            <li>Dehradun</li>
+            <li>Dehli
+            <ul>
+                <li>Kutub Minar</li>
+                <li>Red Fort</li>
+            </ul>
+            </li>
+          </ul>
+        </li>
+        <li>France</li>
+        <li>Australia</li>
+        <li>Brazil</li>
+      </ul>
+    </div>
+    </body>
+</html>
